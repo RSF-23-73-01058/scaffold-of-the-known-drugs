@@ -82,7 +82,7 @@ def write_tsv(data, output):
 
 
 def main():
-    # insert input path here
+    # insert path to the drug table here
     path = 
     with open(path) as file:
         lines = file.readlines()

@@ -53,6 +53,7 @@ def get_data(cursor) -> dict:
         if record_id in data:
             if mesh is not None and 'mesh_indications' in data[record_id]:
                 data[record_id]['mesh_indications'] += f'|{mesh}'
+                continue
 
         if_organic_drug = f"SELECT ORAL, PARENTERAL " \
                           f"FROM MOLECULE_DICTIONARY " \
